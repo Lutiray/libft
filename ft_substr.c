@@ -27,6 +27,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sb = malloc(len + 1);
 	if (sb == NULL)
 		return (NULL);
-	strlcpy(sb, s + start, len + 1);
+	ft_strlcpy(sb, s + start, len + 1);
 	return (sb);
 }
